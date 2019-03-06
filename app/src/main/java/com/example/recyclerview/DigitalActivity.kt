@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
+import com.example.recyclerview.model.ApiGitHub
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_digital.*
 
 class DigitalActivity : AppCompatActivity() {
 
@@ -15,8 +18,14 @@ class DigitalActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.tvdigital)
         val intent = intent
         val s = intent.getStringExtra("namedigital")
-        Log.d("log", "" + s)
+        val i = intent.getIntExtra("position", 0)
+        val urlavt = intent.getStringExtra("urlavatar")
+        Log.d("log", "" + s + i)
         textView.text = s
+        Picasso.with(this)
+                .load(urlavt)
+                .into(imageViewgigital)
+
 
     }
 }

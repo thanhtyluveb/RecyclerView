@@ -43,6 +43,8 @@ class Adapter(internal var context: Context, users: ArrayList<ApiGitHub>) : Recy
         viewholder.layout.setOnClickListener {
             Toast.makeText(context, "" + users[i].login, Toast.LENGTH_SHORT).show()
             val intent = Intent(context, DigitalActivity::class.java)
+            intent.putExtra("urlavatar",""+users[i].avatarUrl)
+            intent.putExtra("position", i)
             intent.putExtra("namedigital", "" + viewholder.textView.text)
             context.startActivity(intent)
         }

@@ -8,16 +8,16 @@
 
     <TextView
         android:id="@+id/tvdigital"
-        android:layout_width="212dp"
-        android:layout_height="57dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="TextView"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewgigital"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintStart_toEndOf="@+id/imageViewgigital"
+        app:layout_constraintTop_toTopOf="@+id/imageViewgigital" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/backgr" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageViewgigital"
         android:layout_width="118dp"
         android:layout_height="116dp"
         app:layout_constraintEnd_toEndOf="parent"
