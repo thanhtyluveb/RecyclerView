@@ -10,7 +10,7 @@ object RetrofitClient {
 
     private var retrofit: Retrofit? = null
 
-    fun getClient(baseUrl: String): Retrofit {
+    fun getClient(baseUrl: String): Retrofit? {
         val buider = OkHttpClient.Builder()
                 .readTimeout(5000, TimeUnit.MILLISECONDS)
                 .writeTimeout(5000, TimeUnit.MILLISECONDS)

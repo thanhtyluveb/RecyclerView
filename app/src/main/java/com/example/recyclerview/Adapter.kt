@@ -41,7 +41,7 @@ class Adapter(internal var context: Context, users: ArrayList<ApiGitHub>) : Recy
 
         viewholder.textView.text = users[i].login
         viewholder.layout.setOnClickListener {
-            Toast.makeText(context, "" + users[i], Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "" + users[i].login, Toast.LENGTH_SHORT).show()
             val intent = Intent(context, DigitalActivity::class.java)
             intent.putExtra("namedigital", "" + viewholder.textView.text)
             context.startActivity(intent)
