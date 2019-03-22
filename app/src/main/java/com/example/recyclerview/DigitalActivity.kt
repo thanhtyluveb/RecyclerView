@@ -4,7 +4,9 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import com.example.recyclerview.model.ApiGitHub
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_digital.*
@@ -25,6 +27,7 @@ class DigitalActivity : AppCompatActivity() {
         Picasso.with(this)
                 .load(urlavt)
                 .into(imageViewgigital)
+
 
 
     }
